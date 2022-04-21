@@ -7,6 +7,23 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## about get inside container and exec php artisan 
+- docker-compose exec backend sh
+
+## about git branch / merge 
+- Para criar a nova branch a partir da branch que você está:
+
+- git branch MinhaNovaBrach
+- Para criar a nova branch a partir de uma branch especifica:
+
+- git branch -c branchEspecifica MinhaNovaBrach
+- Nos dois casos você precisa trocar para a branch criada, commitar e fazer o trancking:
+
+- git checkout MinhaNovaBrach
+
+- git commit -m "Olha que commit lindo <3"
+
+- git push -u origin MinhaNovaBrach
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
