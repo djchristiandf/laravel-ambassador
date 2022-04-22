@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "13f62874-f5fc-4b64-ab02-309a9aee8849",
+		"name": "AbamssadorGit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"aa@2aa.com\",\r\n    \"password\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/admin/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\" : \"a\",\r\n    \"last_name\" : \"aa\",\r\n    \"email\" : \"aa@2aa.com\",\r\n    \"password\" : \"123\",\r\n    \"password_confirm\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/admin/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 8|hGzHjqBUe6yHdOTD1QexSvqjdpQcK6n9p8n7fGRB",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/admin/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 8|hGzHjqBUe6yHdOTD1QexSvqjdpQcK6n9p8n7fGRB",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/admin/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-info",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/ecmascript",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2%7CaIiU8rLIT0y7NP52GqbrrlL3RduyBoBf3exepSy2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\" : \"bbbbbb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/admin/users/info",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"users",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
