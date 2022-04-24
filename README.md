@@ -22,6 +22,23 @@
 - git checkout MinhaNovaBrach
 - git commit -m "Olha que commit lindo <3"
 - git push -u origin MinhaNovaBrach
+
+## About commands used Laravel
+1. php artisan make:controller AmbassadorController
+2. alter userFactory change collum ambassador need <br/>
+3. php artisan make:seeder AmbassadorSeeder <!--(generate 30 examples) -->
+4. php artisan db:seeder Ambassador
+5. php artisan ide:models
+6. start models project
+7. php artisan make:migration create_produtcts_table
+8. php artisan migrate
+9. php artisan make:model Product
+10. php artisan make:controller ProductController --api --model=Product
+11. php artisan make:factory ProductFactory
+12. php artisan make:seeder ProductSeeder
+13. php artisan db:seed --class=ProductSeeder
+14. php artisan make:migration create_links_table
+15. php artisan make:migration create_link_products_table
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
