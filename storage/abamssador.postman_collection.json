@@ -335,6 +335,28 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-user-links",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/admin/users/12/links",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"users",
+						"12",
+						"links"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

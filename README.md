@@ -11,21 +11,21 @@
 - docker-compose exec backend sh
 
 ## about git branch / merge
-- Para criar a nova branch a partir da branch que você está:
-- git branch MinhaNovaBrach
+- For create a new branch where are you from:
+- git branch MyNewBranch
 
-- Para criar a nova branch a partir de uma branch especifica:
-- git branch -c branchEspecifica MinhaNovaBrach
+- To create the new branch from a specific branch:
+- git branch -c branchEspecifica MyNewBranch
 
-- Nos dois casos você precisa trocar para a branch criada, commitar e fazer o trancking:
+- In both cases you need to switch to the created branch, commit and do the locking:
 
-- git checkout MinhaNovaBrach
+- git checkout MyNewBranch
 - git commit -m "Olha que commit lindo <3"
-- git push -u origin MinhaNovaBrach
+- git push -u origin MyNewBranch
 
 ## About commands used Laravel
 1. php artisan make:controller AmbassadorController
-2. alter userFactory change collum ambassador need <br/>
+2. alter userFactory change collum ambassador need
 3. php artisan make:seeder AmbassadorSeeder <!--(generate 30 examples) -->
 4. php artisan db:seeder Ambassador
 5. php artisan ide:models
@@ -39,6 +39,16 @@
 13. php artisan db:seed --class=ProductSeeder
 14. php artisan make:migration create_links_table
 15. php artisan make:migration create_link_products_table
+16. php artisan migrate
+17. php artisan make:model Link
+18. php artisan make:model LinkProduct
+19. php artisan ide:generate
+20. php artisan ide:models
+21. php artisan make:controller LinkController
+22. php artisan make:factory LinkFactory
+23. php artisan make:seeder LinkSeeder
+24. php artisan db:seed --class LinkSeeder
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
