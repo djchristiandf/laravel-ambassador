@@ -48,7 +48,9 @@
 22. php artisan make:factory LinkFactory
 23. php artisan make:seeder LinkSeeder
 24. php artisan db:seed --class LinkSeeder
-
+25. php artisan make:migration create_orders_table
+26. php artisan make:migration create_order_itens_table
+27. php artisan migrate
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
