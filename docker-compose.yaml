@@ -13,7 +13,7 @@ services:
     image: mysql:8
     restart: always
     environment:
-      MYSQL_DATABASE: ambassador
+      MYSQL_DATABASE: ambassador2
       MYSQL_ROOT_PASSWORD: root
       MYSQL_PASSWORD: root
     volumes:
