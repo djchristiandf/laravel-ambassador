@@ -23,6 +23,18 @@
 - git commit -m "Olha que commit lindo <3"
 - git push -u origin MyNewBranch
 
+# About clone, organize, install and initiialize
+1. Run git clone <my-cool-project>
+2. Run composer install
+
+# inside container docker - backend
+3. Run cp .env.example .env (set user, password, database name and host)
+4. Run php artisan key:generate
+5. Run php artisan migrate, before set conf to database
+6. Run php artisan db:seed
+7. Run php artisan serve
+8. Go to link localhost:8000
+
 ## About commands used Laravel
 1. php artisan make:controller AmbassadorController
 2. alter userFactory change collum ambassador need
@@ -51,7 +63,20 @@
 25. php artisan make:migration create_orders_table
 26. php artisan make:migration create_order_itens_table
 27. php artisan make:seeder UserSeeder
-27. php artisan migrate:refresh --seed
+28. php artisan migrate:refresh --seed
+29. php artisan make:model OrderItem
+30. php artisan make:model Order
+31. php artisan ide:models
+32. php artisan make:factory OrderFactory
+33. php artisan make:factory OrderItemFactory
+34. php artisan make:seeder OrderSeeder
+35. php artisan db:seed --class=OrderSeeder
+36. php artisan make:resource OrderResource
+37. php artisan ide:models
+38. php artisan makeresource OrderItemResource
+39. php artisan make:middleware ScopeAmbassadorMiddleware
+40. Add Scope files to Kernel
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
